@@ -73,28 +73,21 @@ On Debian/Ubuntu systems, you should install Rust via [rustup](https://rustup.rs
 
 #### Compiling
 
-Ensure you have a copy of certonaut's source code on the machine you want to compile:
-
-``` sh
-git clone https://github.com/certonaut/certonaut.git
-cd certonaut
-```
-
-Then use cargo to compile & install:
+Simply use cargo to compile & install:
 
 === "All Features"
 
     ``` sh
-    cargo install --all-features --path . --bin certonaut
+    cargo install --all-features --git https://github.com/certonaut/certonaut.git --bin certonaut
     ```
 
 === "Lite"
 
     ``` sh
-    cargo install --path . --bin certonaut
+    cargo install --git https://github.com/certonaut/certonaut.git --bin certonaut
     ```
 
-If everything is succesful, the installed `certonaut` binary should be in `~/.cargo/bin/certonaut` (which should also be in your path, if you setup Rust correctly).
+If everything is succesful, the installed `certonaut` binary should be in `~/.cargo/bin/certonaut` (which should also be in your path).
 
 ## Next steps
 
