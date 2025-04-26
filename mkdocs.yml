@@ -1,5 +1,8 @@
 site_name: Certonaut Documentation
 site_url: https://docs.certonaut.net
+repo_url: https://github.com/certonaut/docs
+repo_name: GitHub
+edit_uri: blob/main/docs/
 theme:
   name: material
   palette:
@@ -26,6 +29,8 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - content.action.edit
+    - content.action.view
     - content.tabs.link
     - navigation.expand
 markdown_extensions:
