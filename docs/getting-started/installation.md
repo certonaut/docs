@@ -12,7 +12,23 @@ This guide will get you up and running with certonaut. We'll start with installi
 
 ## Installing certonaut
 
-[In the future, certonaut will offer binary downloads. These will be explained here. Right now, certonaut can only be build from source]
+### Nightly / Unstable Builds
+
+You can download unreleased, unstable versions of certonaut built from the main branch directly:
+
+ [https://nightly.link/certonaut/certonaut/workflows/rust/main](https://nightly.link/certonaut/certonaut/workflows/rust/main).
+
+ These binaries are ready to use single-file binaries. The binaries fully-featured builds with all functionality enabled, built on GitHub Actions for transparency. As these are unstable, they will contain more bugs and unfinished features compared to regular releases. (Note: Since certonaut is currently in alpha, no regular releases exist as of yet).
+
+Three nightly builds exist currently:
+
+* Linux for ARM 64-bit processors (aarch64/arm64/armv8): [https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-linux-arm64.zip](https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-linux-arm64.zip)
+* Linux for x86-64 bit processors (Intel/AMD): [https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-linux-x64.zip](https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-linux-x64.zip)
+* Windows for x86-64 bit processors (Intel/AMD): [https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-windows-x64.zip
+](https://nightly.link/certonaut/certonaut/workflows/rust/main/certonaut-windows-x64.zip)
+
+To use, download the zip file for your system, unzip it, and execute the binary file (on Unix you may need to `chmod +x certonaut` the binary first). It is recommended to run certonaut as the `root` user (or with `sudo`) in order for it to be able to make changes to system files where required (e.g. for the magic solver). However, advanced users can also run `certonaut` as a regular unprivileged
+user account. In this case you may need to adjust permissions of the `/etc/certonaut` directory though.
 
 ### Building from source
 
